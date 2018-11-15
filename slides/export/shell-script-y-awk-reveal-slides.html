@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="pandoc">
+  <meta name="description" content="De 0 a 100 con Bash Shell Scripting y AWK" />
+  <meta name="author" content="Adolfo Sanz De Diego">
+  <title>De 0 a 100 con Bash Shell Scripting y AWK</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../lib/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../lib/reveal.js-menu/menu.css">
+  <link rel="stylesheet" href="../lib/reveal.js/css/theme/beige.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="../lib/reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/reveal.js/css/print/pdf.css' : '../lib/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+  <style type="text/css">
+    body {
+      background: white !important;
+      background-color: white !important;
+    }
+    code{
+      white-space: pre;
+    }
+    .reveal pre code {
+      background: rgba(255, 255, 255, 0.7);
+      color: rgba(0, 0, 0, 0.7);
+    }
+    .reveal section img {
+      margin: 15px 0px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.9);
+    }
+    strong {
+      color: #777
+    }
+    a:hover {
+      text-decoration: underline !important;
+    }
+    h1.title {
+      font-size: 200% !important;
+    }
+    h1 {
+      font-size: 200% !important;
+    }
+    h2 {
+      font-size: 150% !important;
+    }
+    h3 {
+      font-size: 100% !important;
+    }
+    @media print {
+      #only-print-parent { display: table !important; }
+      #only-print-child { display: table-cell !important; vertical-align: middle;}
+      h1.title { font-size: 300% !important;}
+      h1 { font-size: 300% !important; }
+      h2 { font-size: 200% !important; }
+      h3 { font-size: 150% !important; }
+    }
+  </style>
+  <!--[if lt IE 9]>
+  <script src="../lib/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="only-print-parent">
+    <div id="only-print-child">
+      <h1 class="title">De 0 a 100 con Bash Shell Scripting y AWK</h2>
+      <h2 class="author">Adolfo Sanz De Diego</h2>
+      <h3 class="date">Commit-Conf 2018</h3>
+    </div>
+</section>
+
+<section><section id="autor" class="titleslide slide level1"><h1><span class="header-section-number">2</span> Autor</h1></section><section id="adolfo-sanz-de-diego" class="slide level2">
+<h2><span class="header-section-number">2.1</span> Adolfo Sanz De Diego</h2>
+<p>Asesor. Desarrollador. Profesor. Formador.</p>
+<ul>
+<li>Blog: <a href="https://www.asanzdiego.com/">asanzdiego.com</a></li>
+<li>Correo: <a href="mailto:asanzdiego@gmail.com">asanzdiego@gmail.com</a></li>
+<li>GitHub: <a href="http://github.com/asanzdiego">github.com/asanzdiego</a></li>
+<li>Twitter: <a href="http://twitter.com/asanzdiego">twitter.com/asanzdiego</a></li>
+<li>LinkedIn: <a href="http://www.linkedin.com/in/asanzdiego">in/asanzdiego</a></li>
+<li>SlideShare: <a href="http://www.slideshare.net/asanzdiego/">slideshare.net/asanzdiego</a></li>
+</ul>
+</section></section>
+<section><section id="shell-script" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Shell Script</h1></section><section id="hola-mundo" class="slide level2">
+<h2><span class="header-section-number">3.1</span> Hola mundo</h2>
+<ul>
+<li>Un shell script es un fichero de texto con comandos Linux.</li>
+</ul>
+<pre><code>#! /bin/bash
+
+echo &quot;Hola mundo!&quot;</code></pre>
+</section><section id="permisos" class="slide level2">
+<h2><span class="header-section-number">3.2</span> Permisos</h2>
+<ul>
+<li>Antes de ejecutar hay que darle permisos.</li>
+</ul>
+<pre><code>$ chmod +x 01-hola-mundo.sh</code></pre>
+</section><section id="ejecución" class="slide level2">
+<h2><span class="header-section-number">3.3</span> Ejecución</h2>
+<ul>
+<li>Si está en el PATH, el nombre directamente, sino ./nombre</li>
+</ul>
+<pre><code>$ ./01-hola-mundo.sh</code></pre>
+</section><section id="chuleta" class="slide level2">
+<h2><span class="header-section-number">3.4</span> Chuleta</h2>
+<p><a href="https://github.com/asanzdiego/curso-shell-script-2014" class="uri">https://github.com/asanzdiego/curso-shell-script-2014</a></p>
+<figure>
+<img src="../img/chuleta-shell-script.png" text-align="center" style="width:50.0%" />
+</figure>
+</section><section id="hola-parámetros" class="slide level2">
+<h2><span class="header-section-number">3.5</span> Hola parámetros</h2>
+</section><section id="número-parámetros" class="slide level2">
+<h2><span class="header-section-number">3.6</span> Número parámetros</h2>
+</section><section id="exit" class="slide level2">
+<h2><span class="header-section-number">3.7</span> Exit</h2>
+</section></section>
+<section><section id="acerca-de" class="titleslide slide level1"><h1><span class="header-section-number">4</span> Acerca de</h1></section><section id="licencia" class="slide level2">
+<h2><span class="header-section-number">4.1</span> Licencia</h2>
+<ul>
+<li>Creative Commons Reconocimiento-CompartirIgual 3.0
+<ul>
+<li><a href="http://creativecommons.org/licenses/by-sa/3.0/es/" class="uri">http://creativecommons.org/licenses/by-sa/3.0/es/</a></li>
+</ul></li>
+</ul>
+</section><section id="fuentes" class="slide level2">
+<h2><span class="header-section-number">4.2</span> Fuentes</h2>
+<ul>
+<li>Las fuentes las podéis encontrar en:
+<ul>
+<li><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk" class="uri">https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk</a></li>
+</ul></li>
+</ul>
+</section><section id="slides" class="slide level2">
+<h2><span class="header-section-number">4.3</span> Slides</h2>
+<ul>
+<li>Las slides están hechas con <strong>MarkdownSlides</strong>
+<ul>
+<li><a href="https://github.com/markdownslides/markdownslides" class="uri">https://github.com/markdownslides/markdownslides</a></li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="preguntas" class="titleslide slide level1"><h1><span class="header-section-number">5</span> Preguntas</h1></section></section>
+<section><section id="gracias" class="titleslide slide level1"><h1><span class="header-section-number">6</span> Gracias</h1></section></section>
+    </div>
+  </div>
+
+  <script src="../lib/reveal.js/lib/js/head.min.js"></script>
+  <script src="../lib/reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        pdfMaxPagesPerSlide: 1,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1024,
+        height: 576,
+        // Factor of the display size that should remain empty around the content
+        margin: 0.3,
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.1,
+        maxScale: 1.9,
+
+        menu: {
+            // Specifies which side of the presentation the menu will
+            // be shown. Use 'left' or 'right'.
+            side: 'left',
+
+            // Add slide numbers to the titles in the slide list.
+            // Use 'true' or format string (same as reveal.js slide numbers)
+            numbers: false,
+
+            // Specifies which slide elements will be used for generating
+            // the slide titles in the menu. The default selects the first
+            // heading element found in the slide, but you can specify any
+            // valid css selector and the text from the first matching
+            // element will be used.
+            // Note: that a section data-menu-title attribute or an element
+            // with a menu-title class will take precedence over this option
+            titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+            // Hide slides from the menu that do not have a title.
+            // Set to 'true' to only list slides with titles.
+            hideMissingTitles: false,
+
+            // Add markers to the slide titles to indicate the
+            // progress through the presentation
+            markers: false,
+
+            // Specify custom panels to be included in the menu, by
+            // providing an array of objects with 'title', 'icon'
+            // properties, and either a 'src' or 'content' property.
+            custom: false,
+
+            // Specifies the themes that will be available in the themes
+            // menu panel. Set to 'false' to hide themes panel.
+            themes: [
+                { name: 'Black', theme: '../lib/reveal.js/css/theme/black.css' },
+                { name: 'White', theme: '../lib/reveal.js/css/theme/white.css' },
+                { name: 'League', theme: '../lib/reveal.js/css/theme/league.css' },
+                { name: 'Sky', theme: '../lib/reveal.js/css/theme/sky.css' },
+                { name: 'Beige', theme: '../lib/reveal.js/css/theme/beige.css' },
+                { name: 'Simple', theme: '../lib/reveal.js/css/theme/simple.css' },
+                { name: 'Serif', theme: '../lib/reveal.js/css/theme/serif.css' },
+                { name: 'Blood', theme: '../lib/reveal.js/css/theme/blood.css' },
+                { name: 'Night', theme: '../lib/reveal.js/css/theme/night.css' },
+                { name: 'Moon', theme: '../lib/reveal.js/css/theme/moon.css' },
+                { name: 'Solarized', theme: '../lib/reveal.js/css/theme/solarized.css' }
+            ],
+
+            // Specifies if the transitions menu panel will be shown.
+            transitions: true,
+
+            // Adds a menu button to the slides to open the menu panel.
+            // Set to 'false' to hide the button.
+            openButton: true,
+
+            // If 'true' allows the slide number in the presentation to
+            // open the menu panel. The reveal.js slideNumber option must
+            // be displayed for this to take effect
+            openSlideNumber: false,
+
+            // If true allows the user to open and navigate the menu using
+            // the keyboard. Standard keyboard interaction with reveal
+            // will be disabled while the menu is open.
+            keyboard: true
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../lib/reveal.js/plugin/notes/notes.js', async: true },
+          //{ src: '../lib/reveal.js/plugin/search/search.js', async: true },
+          { src: '../lib/reveal.js-menu/menu.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
