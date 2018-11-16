@@ -30,7 +30,7 @@ Asesor. Desarrollador. Profesor. Formador.
 
 ## Hola mundo
 
-- Un shell script es un fichero de texto con comandos Linux.
+- Un shell script es un **fichero de texto con comandos**, y no hay ni que compilar, ni tener nada instalado :-)
 
 ~~~
 #! /bin/bash
@@ -40,7 +40,7 @@ echo "Hola mundo!"
 
 ## Permisos
 
-- Antes de ejecutar hay que darle permisos.
+- Antes de ejecutar hay que **darle permisos**, pero recuerda, un gran poder conlleva una gran responsabilidad :-)
 
 ~~~
 $ chmod +x 01-hola-mundo.sh
@@ -48,11 +48,54 @@ $ chmod +x 01-hola-mundo.sh
 
 ## Ejecución
 
-- Si está en el PATH, el nombre directamente, sino ./nombre
+- Para ejecutar un script no hace falta ninguna guillotina :-) si está en el $PATH, el nombre directamente, sino desde la carpeta **./nombre.sh**
 
 ~~~
-$ ./01-hola-mundo.sh
+$ ./01_hola_mundo.sh
 ~~~
+
+## Nombres
+
+- Estas son mis **reglas de estilo** (en realidad de Google), si no te gustan tengo otras. :-)
+
+~~~
+ficheros_shell_scripts.sh
+VARIABLES_DE_ENTORNO
+variables_locales
+nombres_de_funciones
+~~~
+
+## Parámetros
+
+- Los parámetros los cogemos de la **linea de comandos** cuando ejecutamos.
+
+~~~
+$ ./02_parametros.sh param_1 param_2 ... param_N
+~~~
+
+~~~
+param_1=$1
+param_N=${N:-default}
+num_params=$#
+all_params=($@) # es un array
+~~~
+
+## Inicio
+
+- Es una buena práctica **empezar los scripts** así:
+
+~~~
+#! /bin/bash
+
+# Comentario con lo que hace el script
+
+set -o errexit  # terminar el script si un comando falla
+set -o pipefail # terminar el script si un comando falla en una tubería
+set -o nounset  # terminar el script si usa una variable no declarada
+# set -o xtrace # si quieres debuguear
+~~~
+
+## Exit
 
 ## Chuleta
 
@@ -60,11 +103,35 @@ $ ./01-hola-mundo.sh
 
 ![](../img/chuleta-shell-script.png)
 
-## Hola parámetros
-
-## Número parámetros
 
 ## Exit
+
+
+
+
+# Tips
+
+
+## Funciones
+
+~~~
+_http_code () {
+  local url="$1"
+  curl --silent --head \
+       --output /dev/null \
+       --write-out "%{http_code}\n" \
+       "$url"
+}
+
+~~~
+
+
+
+- Usalo para hacer pequeños scripts, no grandes programas.
+
+[Google Shell Style Guide](https://google.github.io/styleguide/shell.xml)
+
+[ShellCheck](https://github.com/koalaman/shellcheck)
 
 
 

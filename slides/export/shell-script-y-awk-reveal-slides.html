@@ -101,7 +101,7 @@
 <section><section id="shell-script" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Shell Script</h1></section><section id="hola-mundo" class="slide level2">
 <h2><span class="header-section-number">3.1</span> Hola mundo</h2>
 <ul>
-<li>Un shell script es un fichero de texto con comandos Linux.</li>
+<li>Un shell script es un <strong>fichero de texto con comandos</strong>, y no hay ni que compilar, ni tener nada instalado :-)</li>
 </ul>
 <pre><code>#! /bin/bash
 
@@ -109,30 +109,76 @@ echo &quot;Hola mundo!&quot;</code></pre>
 </section><section id="permisos" class="slide level2">
 <h2><span class="header-section-number">3.2</span> Permisos</h2>
 <ul>
-<li>Antes de ejecutar hay que darle permisos.</li>
+<li>Antes de ejecutar hay que <strong>darle permisos</strong>, pero recuerda, un gran poder conlleva una gran responsabilidad :-)</li>
 </ul>
 <pre><code>$ chmod +x 01-hola-mundo.sh</code></pre>
 </section><section id="ejecución" class="slide level2">
 <h2><span class="header-section-number">3.3</span> Ejecución</h2>
 <ul>
-<li>Si está en el PATH, el nombre directamente, sino ./nombre</li>
+<li>Para ejecutar un script no hace falta ninguna guillotina :-) si está en el $PATH, el nombre directamente, sino desde la carpeta <strong>./nombre.sh</strong></li>
 </ul>
-<pre><code>$ ./01-hola-mundo.sh</code></pre>
+<pre><code>$ ./01_hola_mundo.sh</code></pre>
+</section><section id="nombres" class="slide level2">
+<h2><span class="header-section-number">3.4</span> Nombres</h2>
+<ul>
+<li>Estas son mis <strong>reglas de estilo</strong> (en realidad de Google), si no te gustan tengo otras. :-)</li>
+</ul>
+<pre><code>ficheros_shell_scripts.sh
+VARIABLES_DE_ENTORNO
+variables_locales
+nombres_de_funciones</code></pre>
+</section><section id="parámetros" class="slide level2">
+<h2><span class="header-section-number">3.5</span> Parámetros</h2>
+<ul>
+<li>Los parámetros los cogemos de la <strong>linea de comandos</strong> cuando ejecutamos.</li>
+</ul>
+<pre><code>$ ./02_parametros.sh param_1 param_2 ... param_N</code></pre>
+<pre><code>param_1=$1
+param_N=${N:-default}
+num_params=$#
+all_params=($@) # es un array</code></pre>
+</section><section id="inicio" class="slide level2">
+<h2><span class="header-section-number">3.6</span> Inicio</h2>
+<ul>
+<li>Es una buena práctica <strong>empezar los scripts</strong> así:</li>
+</ul>
+<pre><code>#! /bin/bash
+
+# Comentario con lo que hace el script
+
+set -o errexit  # terminar el script si un comando falla
+set -o pipefail # terminar el script si un comando falla en una tubería
+set -o nounset  # terminar el script si usa una variable no declarada
+# set -o xtrace # si quieres debuguear</code></pre>
+</section><section id="exit" class="slide level2">
+<h2><span class="header-section-number">3.7</span> Exit</h2>
 </section><section id="chuleta" class="slide level2">
-<h2><span class="header-section-number">3.4</span> Chuleta</h2>
+<h2><span class="header-section-number">3.8</span> Chuleta</h2>
 <p><a href="https://github.com/asanzdiego/curso-shell-script-2014" class="uri">https://github.com/asanzdiego/curso-shell-script-2014</a></p>
 <figure>
 <img src="../img/chuleta-shell-script.png" text-align="center" style="width:50.0%" />
 </figure>
-</section><section id="hola-parámetros" class="slide level2">
-<h2><span class="header-section-number">3.5</span> Hola parámetros</h2>
-</section><section id="número-parámetros" class="slide level2">
-<h2><span class="header-section-number">3.6</span> Número parámetros</h2>
-</section><section id="exit" class="slide level2">
-<h2><span class="header-section-number">3.7</span> Exit</h2>
+</section><section id="exit-1" class="slide level2">
+<h2><span class="header-section-number">3.9</span> Exit</h2>
 </section></section>
-<section><section id="acerca-de" class="titleslide slide level1"><h1><span class="header-section-number">4</span> Acerca de</h1></section><section id="licencia" class="slide level2">
-<h2><span class="header-section-number">4.1</span> Licencia</h2>
+<section><section id="tips" class="titleslide slide level1"><h1><span class="header-section-number">4</span> Tips</h1></section><section id="funciones" class="slide level2">
+<h2><span class="header-section-number">4.1</span> Funciones</h2>
+<pre><code>_http_code () {
+  local url=&quot;$1&quot;
+  curl --silent --head \
+       --output /dev/null \
+       --write-out &quot;%{http_code}\n&quot; \
+       &quot;$url&quot;
+}
+</code></pre>
+<ul>
+<li>Usalo para hacer pequeños scripts, no grandes programas.</li>
+</ul>
+<p><a href="https://google.github.io/styleguide/shell.xml">Google Shell Style Guide</a></p>
+<p><a href="https://github.com/koalaman/shellcheck">ShellCheck</a></p>
+</section></section>
+<section><section id="acerca-de" class="titleslide slide level1"><h1><span class="header-section-number">5</span> Acerca de</h1></section><section id="licencia" class="slide level2">
+<h2><span class="header-section-number">5.1</span> Licencia</h2>
 <ul>
 <li>Creative Commons Reconocimiento-CompartirIgual 3.0
 <ul>
@@ -140,7 +186,7 @@ echo &quot;Hola mundo!&quot;</code></pre>
 </ul></li>
 </ul>
 </section><section id="fuentes" class="slide level2">
-<h2><span class="header-section-number">4.2</span> Fuentes</h2>
+<h2><span class="header-section-number">5.2</span> Fuentes</h2>
 <ul>
 <li>Las fuentes las podéis encontrar en:
 <ul>
@@ -148,7 +194,7 @@ echo &quot;Hola mundo!&quot;</code></pre>
 </ul></li>
 </ul>
 </section><section id="slides" class="slide level2">
-<h2><span class="header-section-number">4.3</span> Slides</h2>
+<h2><span class="header-section-number">5.3</span> Slides</h2>
 <ul>
 <li>Las slides están hechas con <strong>MarkdownSlides</strong>
 <ul>
@@ -156,8 +202,8 @@ echo &quot;Hola mundo!&quot;</code></pre>
 </ul></li>
 </ul>
 </section></section>
-<section><section id="preguntas" class="titleslide slide level1"><h1><span class="header-section-number">5</span> Preguntas</h1></section></section>
-<section><section id="gracias" class="titleslide slide level1"><h1><span class="header-section-number">6</span> Gracias</h1></section></section>
+<section><section id="preguntas" class="titleslide slide level1"><h1><span class="header-section-number">6</span> Preguntas</h1></section></section>
+<section><section id="gracias" class="titleslide slide level1"><h1><span class="header-section-number">7</span> Gracias</h1></section></section>
     </div>
   </div>
 
