@@ -12,6 +12,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="../lib/reveal.js/css/reveal.css">
   <link rel="stylesheet" href="../lib/reveal.js-menu/menu.css">
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
   <link rel="stylesheet" href="../lib/reveal.js/css/theme/beige.css" id="theme">
 
 	<!-- For syntax highlighting -->
@@ -97,85 +134,220 @@
 <li>LinkedIn: <a href="http://www.linkedin.com/in/asanzdiego">in/asanzdiego</a></li>
 <li>SlideShare: <a href="http://www.slideshare.net/asanzdiego/">slideshare.net/asanzdiego</a></li>
 </ul>
-</section></section>
-<section><section id="shell-script" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Shell Script</h1></section><section id="hola-mundo" class="slide level2">
-<h2><span class="header-section-number">3.1</span> Hola mundo</h2>
+</section><section id="disclaimer" class="slide level2">
+<h2><span class="header-section-number">2.2</span> Disclaimer</h2>
 <ul>
-<li>Un shell script es un <strong>fichero de texto con comandos</strong>, y no hay ni que compilar, ni tener nada instalado :-)</li>
+<li class="fragment">He intentado montar una charla útil <strong>para principiantes</strong>, pero <strong>con tips para gente con más conocimientos</strong>.</li>
+<li class="fragment">Espero haberlo conseguido :-)</li>
 </ul>
-<pre><code>#! /bin/bash
+</section></section>
+<section><section id="shell-script" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Shell Script</h1></section><section id="introducción" class="slide level2">
+<h2><span class="header-section-number">3.1</span> Introducción</h2>
+<ul>
+<li class="fragment">Un shell script es un <strong>fichero de texto con comandos</strong>.</li>
+<li class="fragment">Para ejecutarlo <strong>no hay ni que compilar, ni tener nada instalado</strong>, y puedes utilizar todos los comandos del sistema.</li>
+<li class="fragment">Usalo para <strong>automatizar tareas del sistema y/o procesar datos</strong> de forma rápida.</li>
+<li class="fragment">Usalo para hacer <strong>pequeños scripts, no grandes programas</strong>, para eso tienes otros lenguajes.</li>
+</ul>
+</section><section id="hola-mundo" class="slide level2">
+<h2><span class="header-section-number">3.2</span> Hola mundo</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#! /bin/bash</span>
 
-echo &quot;Hola mundo!&quot;</code></pre>
+<span class="co"># script showing a &quot;Hello world!&quot;</span>
+
+<span class="bu">echo</span> <span class="st">&quot;Hello world!&quot;</span></code></pre></div>
 </section><section id="permisos" class="slide level2">
-<h2><span class="header-section-number">3.2</span> Permisos</h2>
+<h2><span class="header-section-number">3.3</span> Permisos</h2>
 <ul>
 <li>Antes de ejecutar hay que <strong>darle permisos</strong>, pero recuerda, un gran poder conlleva una gran responsabilidad :-)</li>
 </ul>
-<pre><code>$ chmod +x 01-hola-mundo.sh</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">chmod</span> +x 01_hello_world.sh</code></pre></div>
 </section><section id="ejecución" class="slide level2">
-<h2><span class="header-section-number">3.3</span> Ejecución</h2>
+<h2><span class="header-section-number">3.4</span> Ejecución</h2>
 <ul>
-<li>Para ejecutar un script no hace falta ninguna guillotina :-) si está en el $PATH, el nombre directamente, sino desde la carpeta <strong>./nombre.sh</strong></li>
+<li>Para ejecutar un script:
+<ul>
+<li>si está en el $PATH, <strong>el nombre directamente</strong></li>
+<li>si no, desde la carpeta, <strong>./nombre.sh</strong></li>
+</ul></li>
 </ul>
-<pre><code>$ ./01_hola_mundo.sh</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">./01_hello_world.sh</span></code></pre></div>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/01_hola_mundo.sh">ejemplos/01_hola_mundo.sh</a></p>
 </section><section id="nombres" class="slide level2">
-<h2><span class="header-section-number">3.4</span> Nombres</h2>
+<h2><span class="header-section-number">3.5</span> Nombres</h2>
 <ul>
 <li>Estas son mis <strong>reglas de estilo</strong> (en realidad de Google), si no te gustan tengo otras. :-)</li>
 </ul>
-<pre><code>ficheros_shell_scripts.sh
-VARIABLES_DE_ENTORNO
-variables_locales
-nombres_de_funciones</code></pre>
-</section><section id="parámetros" class="slide level2">
-<h2><span class="header-section-number">3.5</span> Parámetros</h2>
-<ul>
-<li>Los parámetros los cogemos de la <strong>linea de comandos</strong> cuando ejecutamos.</li>
-</ul>
-<pre><code>$ ./02_parametros.sh param_1 param_2 ... param_N</code></pre>
-<pre><code>param_1=$1
-param_N=${N:-default}
-num_params=$#
-all_params=($@) # es un array</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">ficheros_shell_scripts.sh</span>
+<span class="ex">VARIABLES_DE_ENTORNO</span>
+<span class="ex">variables_locales</span>
+<span class="ex">nombres_de_funciones</span></code></pre></div>
 </section><section id="inicio" class="slide level2">
 <h2><span class="header-section-number">3.6</span> Inicio</h2>
 <ul>
-<li>Es una buena práctica <strong>empezar los scripts</strong> así:</li>
+<li>Es una buena práctica <strong>empezar los shells scripts</strong> así:</li>
 </ul>
-<pre><code>#! /bin/bash
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk"><span class="co">#! /bin/bash</span>
 
-# Comentario con lo que hace el script
+<span class="co"># Short description of the script</span>
 
-set -o errexit  # terminar el script si un comando falla
-set -o pipefail # terminar el script si un comando falla en una tubería
-set -o nounset  # terminar el script si usa una variable no declarada
-# set -o xtrace # si quieres debuguear</code></pre>
+set <span class="op">-</span>o errexit  <span class="co"># the script ends if a command fails</span>
+set <span class="op">-</span>o pipefail <span class="co"># the script ends if a command fails in a pipe</span>
+set <span class="op">-</span>o nounset  <span class="co"># the script ends if it uses an undeclared variable</span>
+<span class="co"># set -o xtrace # if you want to debug</span></code></pre></div>
 </section><section id="exit" class="slide level2">
 <h2><span class="header-section-number">3.7</span> Exit</h2>
+<ul>
+<li>Es una buena práctica terminar los shells scripts con un un código de retorno:
+<ul>
+<li><strong>mayor de 0</strong> si ha habido un error</li>
+<li><strong>igual a 0</strong> si termina correctamente (si no pones 'exit')</li>
+</ul></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#! /bin/bash</span>
+
+<span class="va">num_params=$#</span>
+
+<span class="kw">if</span><span class="bu"> [</span> <span class="va">$num_params</span> <span class="ot">-lt</span> 1 ]]; then
+    echo <span class="st">&quot;At least one parameter must be introduced.&quot;</span>
+    exit 1 <span class="co"># error and exits with a return code &gt; 0</span>
+fi
+
+echo <span class="st">&quot;All ok&quot;</span> <span class="co"># ok and exits with a return code = 0</span></code></pre></div>
+</section><section id="parciales" class="slide level2">
+<h2><span class="header-section-number">3.8</span> Parciales</h2>
+<ul>
+<li>Podemos guardar el resultado de la ejecución de comandos en variables:</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="va">date=$(</span><span class="fu">date</span> +<span class="st">&#39;%Y-%m-%d %H:%M:%S&#39;</span><span class="va">)</span></code></pre></div>
+</section><section id="funciones" class="slide level2">
+<h2><span class="header-section-number">3.9</span> Funciones</h2>
+<ul>
+<li>Es una buena práctica asignar los <strong>parámetros de la función</strong> al principio ya sean como variables locales o, si es necesario, globales.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk">my_function() <span class="kw">{</span>
+  local function_param_<span class="dv">1</span><span class="op">=</span><span class="st">&quot;$1&quot;</span>    <span class="co"># 1st param assigned as local</span>
+  global_param_<span class="dv">2</span><span class="op">=</span>$<span class="kw">{</span><span class="dv">2</span><span class="op">:-</span>default<span class="kw">}</span>   <span class="co"># 2nd param assigned as global (default)</span>
+  local function_num_params<span class="op">=</span>$<span class="co">#   # numbers of params assigned as local</span>
+  local all_function_params<span class="op">=</span>($@) <span class="co"># all params assigned as a local</span>
+<span class="kw">}</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">my_function</span> function_param_1 function_param_2 ... function_param_N</code></pre></div>
+</section><section id="parámetros" class="slide level2">
+<h2><span class="header-section-number">3.10</span> Parámetros</h2>
+<ul>
+<li>Los parámetros los cogemos de la <strong>linea de comandos</strong> cuando ejecutamos.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk"><span class="co"># Default values</span>
+default_<span class="dv">2</span><span class="op">=</span><span class="st">&quot;Commit Conf&quot;</span>
+
+param_<span class="dv">1</span><span class="op">=</span><span class="dt">$1</span>                 <span class="co"># the first script param</span>
+param_<span class="dv">2</span><span class="op">=</span>$<span class="kw">{</span><span class="dv">2</span><span class="op">:-</span>$<span class="kw">{</span>default_<span class="dv">2</span><span class="kw">}}</span> <span class="co"># the second script param (with default value)</span>
+num_params<span class="op">=</span>$<span class="co">#              # the numbers of script params</span>
+all_params<span class="op">=</span>($@)            <span class="co"># all params assigned as an array</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">./02_parameters.sh</span> param_1 param_2 ... param_N</code></pre></div>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/02_parametros.sh">ejemplos/02_parametros.sh</a></p>
+</section><section id="template" class="slide level2">
+<h2><span class="header-section-number">3.11</span> Template</h2>
+<figure>
+<img src="../img/template.png" text-align="center" style="width:50.0%" />
+</figure>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/template.sh">template.sh</a></p>
 </section><section id="chuleta" class="slide level2">
-<h2><span class="header-section-number">3.8</span> Chuleta</h2>
-<p><a href="https://github.com/asanzdiego/curso-shell-script-2014" class="uri">https://github.com/asanzdiego/curso-shell-script-2014</a></p>
+<h2><span class="header-section-number">3.12</span> Chuleta</h2>
 <figure>
 <img src="../img/chuleta-shell-script.png" text-align="center" style="width:50.0%" />
 </figure>
-</section><section id="exit-1" class="slide level2">
-<h2><span class="header-section-number">3.9</span> Exit</h2>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/chuleta-shell-script.pdf">chuleta-shell-script.pdf</a></p>
+</section><section id="shellcheck" class="slide level2">
+<h2><span class="header-section-number">3.13</span> ShellCheck</h2>
+<figure>
+<img src="../img/shellcheck-a-shell-script-static-analysis-tool.png" text-align="center" style="width:50.0%" />
+</figure>
+<p><a href="https://github.com/koalaman/shellcheck" class="uri">https://github.com/koalaman/shellcheck</a></p>
+</section><section id="google-guide" class="slide level2">
+<h2><span class="header-section-number">3.14</span> Google Guide</h2>
+<figure>
+<img src="../img/google-shell-style-guide.png" text-align="center" style="width:50.0%" />
+</figure>
+<p><a href="https://google.github.io/styleguide/shell.xml" class="uri">https://google.github.io/styleguide/shell.xml</a></p>
+</section><section id="tutorial" class="slide level2">
+<h2><span class="header-section-number">3.15</span> Tutorial</h2>
+<figure>
+<img src="../img/bash-scripting-tutorial-for-beginners.png" text-align="center" style="width:50.0%" />
+</figure>
+<p><a href="https://linuxconfig.org/bash-scripting-tutorial-for-beginners" class="uri">https://linuxconfig.org/bash-scripting-tutorial-for-beginners</a></p>
 </section></section>
-<section><section id="tips" class="titleslide slide level1"><h1><span class="header-section-number">4</span> Tips</h1></section><section id="funciones" class="slide level2">
-<h2><span class="header-section-number">4.1</span> Funciones</h2>
-<pre><code>_http_code () {
-  local url=&quot;$1&quot;
-  curl --silent --head \
-       --output /dev/null \
-       --write-out &quot;%{http_code}\n&quot; \
-       &quot;$url&quot;
-}
-</code></pre>
+<section><section id="awk" class="titleslide slide level1"><h1><span class="header-section-number">4</span> AWK</h1></section><section id="introducción-1" class="slide level2">
+<h2><span class="header-section-number">4.1</span> Introducción</h2>
 <ul>
-<li>Usalo para hacer pequeños scripts, no grandes programas.</li>
+<li class="fragment">Es una <strong>hoja de cálculo</strong> por línea de comandos.</li>
+<li class="fragment">Tiene <strong>su propio penguaje</strong> que es muy parecido a C.</li>
+<li class="fragment">Muy útil para <strong>procesar datos dentro de un shell script</strong>.</li>
+<li class="fragment">Muy útil para <strong>hacer cosas raras con datos</strong> y que con una hoja de cálculo normal es dificil de hacer.</li>
+<li class="fragment">Muy útil cuando <strong>hay muchos datos</strong> y una hoja de cálculo se queda colgada.</li>
 </ul>
-<p><a href="https://google.github.io/styleguide/shell.xml">Google Shell Style Guide</a></p>
-<p><a href="https://github.com/koalaman/shellcheck">ShellCheck</a></p>
+</section><section id="ejecución-1" class="slide level2">
+<h2><span class="header-section-number">4.2</span> Ejecución</h2>
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk">awk &#39;awk_program&#39; data_file</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk">awk <span class="op">-</span>f &#39;awk_program&#39; data_file</code></pre></div>
+</section><section id="grades" class="slide level2">
+<h2><span class="header-section-number">4.3</span> Grades</h2>
+<ul>
+<li>Sacar las medias de los alumnos:</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk">Pepito      <span class="fl">4.4</span>  <span class="fl">3.1</span>  <span class="fl">5.7</span>
+Fulanito    <span class="fl">4.2</span>  <span class="fl">6.5</span>  <span class="fl">8.8</span>
+Menganito   <span class="fl">5.6</span>  <span class="fl">5.0</span>  <span class="fl">5.3</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">awk</span> <span class="st">&#39;{ print $1&quot;=&quot;($2+$3+$4)/3 }&#39;</span> 03_grades.csv</code></pre></div>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/04_grades.sh">ejemplos/04_grades.sh</a></p>
+</section><section id="roles" class="slide level2">
+<h2><span class="header-section-number">4.4</span> Roles</h2>
+<ul>
+<li>Agrupar por rol:</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk">Pepito<span class="op">:</span>Jefe<span class="op">,</span>Sistemas
+Fulanito<span class="op">:</span>Jefe<span class="op">,</span>Desarrollo
+Menganito<span class="op">:</span>Operario<span class="op">,</span>Sistemas<span class="op">,</span>Desarrollo</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Sistemas</span> -<span class="op">&gt;</span> Menganito Pepito 
+<span class="ex">Operario</span> -<span class="op">&gt;</span> Menganito 
+<span class="ex">Jefe</span> -<span class="op">&gt;</span> Fulanito Pepito 
+<span class="ex">Desarrollo</span> -<span class="op">&gt;</span> Menganito Fulanito </code></pre></div>
+</section><section id="sin-awk" class="slide level2">
+<h2><span class="header-section-number">4.5</span> Sin awk</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="va">roles_file=</span>./05_roles.csv
+
+<span class="va">roles=$(</span><span class="fu">cut</span> -d : -f 2 <span class="va">$roles_file</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="st">&#39;s/,/\n/g&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span><span class="va">)</span>
+
+<span class="kw">for</span> <span class="ex">rol</span> in <span class="va">$roles</span><span class="kw">;</span> <span class="kw">do</span>
+  <span class="bu">echo</span> -n <span class="st">&quot;</span><span class="va">${rol}</span><span class="st"> -&gt; &quot;</span>
+  <span class="bu">echo</span> <span class="va">$(</span><span class="fu">grep</span> -E <span class="st">&quot;</span><span class="va">${rol}</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="va">${roles_file}</span><span class="st">&quot;</span> <span class="kw">|</span> <span class="fu">cut</span> -d : -f 1<span class="va">)</span>
+<span class="kw">done</span></code></pre></div>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/06_roles_sin_awk.sh">ejemplos/06_roles_sin_awk.sh</a></p>
+</section><section id="con-awk" class="slide level2">
+<h2><span class="header-section-number">4.6</span> Con awk</h2>
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk"><span class="co"># this will run only once at first</span>
+<span class="cf">BEGIN</span> <span class="kw">{</span> <span class="bu">FS</span> <span class="op">=</span> <span class="st">&quot;,|:&quot;</span> <span class="kw">}</span>
+<span class="co"># this will be executed for each of the lines in the file</span>
+<span class="kw">{</span>
+  name<span class="op">=</span><span class="dt">$1</span>
+  <span class="kw">for</span> (i<span class="op">=</span><span class="dv">2</span><span class="op">;</span> i<span class="op">&lt;=</span><span class="bu">NF</span><span class="op">;</span> i<span class="op">++</span>) <span class="kw">{</span>
+    roles[<span class="dt">$i</span>]<span class="op">=</span>roles[<span class="dt">$i</span>]<span class="st">&quot; &quot;</span>old_names
+  <span class="kw">}</span>
+<span class="kw">}</span>
+<span class="co"># This will only run once at the end</span>
+<span class="cf">END</span> <span class="kw">{</span>
+  <span class="kw">for</span> (rol <span class="kw">in</span> roles) <span class="kw">{</span>
+    <span class="kw">print</span> rol<span class="st">&quot; -&gt; &quot;</span> roles[rol]
+  <span class="kw">}</span>
+<span class="kw">}</span>
+done</code></pre></div>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/07_roles_con_awk.sh">ejemplos/07_roles_con_awk.sh</a></p>
+</section><section id="tutorial-1" class="slide level2">
+<h2><span class="header-section-number">4.7</span> Tutorial</h2>
+<figure>
+<img src="../img/awk-a-tutorial-and-introduction-by-bruce-barnett.png" text-align="center" style="width:50.0%" />
+</figure>
+<p><a href="http://www.grymoire.com/Unix/Awk.html" class="uri">http://www.grymoire.com/Unix/Awk.html</a></p>
 </section></section>
 <section><section id="acerca-de" class="titleslide slide level1"><h1><span class="header-section-number">5</span> Acerca de</h1></section><section id="licencia" class="slide level2">
 <h2><span class="header-section-number">5.1</span> Licencia</h2>
@@ -217,7 +389,7 @@ set -o nounset  # terminar el script si usa una variable no declarada
       Reveal.initialize({
         pdfMaxPagesPerSlide: 1,
         // Transition style
-        transition: 'zoom', // none/fade/slide/convex/concave/zoom
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.

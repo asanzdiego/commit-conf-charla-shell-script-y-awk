@@ -1,10 +1,10 @@
 #! /bin/bash
 
-# Small template for my bash shell scripts.
+# small template for my bash shell scripts.
 
-set -o errexit  # the script end if a command fails
-set -o pipefail # the script end if a command fails in a pipe
-set -o nounset  # the script end if it uses an undeclared variable
+set -o errexit  # the script ends if a command fails
+set -o pipefail # the script ends if a command fails in a pipe
+set -o nounset  # the script ends if it uses an undeclared variable
 # set -o xtrace # if you want to debug
 
 # Defaults values
@@ -85,7 +85,7 @@ params() {
         ;;
       -h|--nelp)
         usage
-        exit 0 # salida sin error
+        exit 0
         ;;
       *)
         error "Unknown parameter ${param}"
