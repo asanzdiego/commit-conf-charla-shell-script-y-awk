@@ -307,8 +307,7 @@ done
 
 ## Fuentes
 
-- Las fuentes las podéis encontrar en:
-    - <https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk>
+[github.com/asanzdiego/commit-conf-charla-shell-script-y-awk](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk)
 
 ## Slides
 
