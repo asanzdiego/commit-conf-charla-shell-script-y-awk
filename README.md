@@ -9,3 +9,41 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 [Charla en el Commit Conf](https://www.koliseo.com/events/commit-2018/r4p/5630471824211968/agenda#/5116072650866688/6265425427955712)
 
 ![](commit-conf.png)
+
+## Recursos
+
+## Plantilla de Bash Shell Script
+
+![](../img/template.png)
+
+[template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/template.sh)
+
+## Chuleta de Bash Shell Script
+
+![](../img/chuleta-shell-script.png)
+
+[chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/chuleta-shell-script.pdf)
+
+## ShellCheck, el lint de Bash Shell Script
+
+![](../img/shellcheck-a-shell-script-static-analysis-tool.png)
+
+<https://github.com/koalaman/shellcheck>
+
+## Guía de estilo de Google de Bash Shell Script
+
+![](../img/google-shell-style-guide.png)
+
+<https://google.github.io/styleguide/shell.xml>
+
+## Tutorial de Bash Shell Script
+
+![](../img/bash-scripting-tutorial-for-beginners.png)
+
+<https://linuxconfig.org/bash-scripting-tutorial-for-beginners>
+
+## Tutorial de AWK
+
+![](../img/awk-a-tutorial-and-introduction-by-bruce-barnett.png)
+
+<http://www.grymoire.com/Unix/Awk.html>

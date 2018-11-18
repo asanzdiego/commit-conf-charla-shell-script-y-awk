@@ -66,7 +66,7 @@ $ chmod +x 01_hello_world.sh
 $ ./01_hello_world.sh
 ~~~
 
-[ejemplos/01_hola_mundo.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/01_hola_mundo.sh)
+[examples/01_hello_word.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/01_hello_word.sh)
 
 ## Nombres
 
@@ -115,7 +115,7 @@ echo "All ok" # ok and exits with a return code = 0
 
 ## Parciales
 
-- Podemos guardar el resultado de la ejecución de comandos en variables:
+- Podemos **guardar el resultado de la ejecución de comandos** en variables con $(codigo):
 
 ~~~{.bash}
 date=$(date +'%Y-%m-%d %H:%M:%S')
@@ -156,7 +156,7 @@ all_params=($@)            # all params assigned as an array
 $ ./02_parameters.sh param_1 param_2 ... param_N
 ~~~
 
-[ejemplos/02_parametros.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/02_parametros.sh)
+[examples/02_parametros.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/02_parametros.sh)
 
 ## Template
 
@@ -228,7 +228,7 @@ Menganito   5.6  5.0  5.3
 awk '{ print $1"="($2+$3+$4)/3 }' 03_grades.csv
 ~~~
 
-[ejemplos/04_grades.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/04_grades.sh)
+[examples/04_grades.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/04_grades.sh)
 
 ## Roles
 
@@ -260,7 +260,7 @@ for rol in $roles; do
 done
 ~~~
 
-[ejemplos/06_roles_sin_awk.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/06_roles_sin_awk.sh)
+[examples/06_roles_sin_awk.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/06_roles_sin_awk.sh)
 
 ## Con awk
 
@@ -283,7 +283,7 @@ END {
 done
 ~~~
 
-[ejemplos/07_roles_con_awk.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/07_roles_con_awk.sh)
+[examples/07_roles_con_awk.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/07_roles_con_awk.sh)
 
 ## Tutorial
 

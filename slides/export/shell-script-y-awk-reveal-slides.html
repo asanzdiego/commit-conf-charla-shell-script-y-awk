@@ -172,7 +172,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">./01_hello_world.sh</span></code></pre></div>
-<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/01_hola_mundo.sh">ejemplos/01_hola_mundo.sh</a></p>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/01_hello_word.sh">examples/01_hello_word.sh</a></p>
 </section><section id="nombres" class="slide level2">
 <h2><span class="header-section-number">3.5</span> Nombres</h2>
 <ul>
@@ -217,7 +217,7 @@ echo <span class="st">&quot;All ok&quot;</span> <span class="co"># ok and exits 
 </section><section id="parciales" class="slide level2">
 <h2><span class="header-section-number">3.8</span> Parciales</h2>
 <ul>
-<li>Podemos guardar el resultado de la ejecución de comandos en variables:</li>
+<li>Podemos <strong>guardar el resultado de la ejecución de comandos</strong> en variables con $(codigo):</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="va">date=$(</span><span class="fu">date</span> +<span class="st">&#39;%Y-%m-%d %H:%M:%S&#39;</span><span class="va">)</span></code></pre></div>
 </section><section id="funciones" class="slide level2">
@@ -245,7 +245,7 @@ param_<span class="dv">2</span><span class="op">=</span>$<span class="kw">{</spa
 num_params<span class="op">=</span>$<span class="co">#              # the numbers of script params</span>
 all_params<span class="op">=</span>($@)            <span class="co"># all params assigned as an array</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">./02_parameters.sh</span> param_1 param_2 ... param_N</code></pre></div>
-<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/02_parametros.sh">ejemplos/02_parametros.sh</a></p>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/02_parametros.sh">examples/02_parametros.sh</a></p>
 </section><section id="template" class="slide level2">
 <h2><span class="header-section-number">3.11</span> Template</h2>
 <figure>
@@ -299,7 +299,7 @@ all_params<span class="op">=</span>($@)            <span class="co"># all params
 Fulanito    <span class="fl">4.2</span>  <span class="fl">6.5</span>  <span class="fl">8.8</span>
 Menganito   <span class="fl">5.6</span>  <span class="fl">5.0</span>  <span class="fl">5.3</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">awk</span> <span class="st">&#39;{ print $1&quot;=&quot;($2+$3+$4)/3 }&#39;</span> 03_grades.csv</code></pre></div>
-<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/04_grades.sh">ejemplos/04_grades.sh</a></p>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/04_grades.sh">examples/04_grades.sh</a></p>
 </section><section id="roles" class="slide level2">
 <h2><span class="header-section-number">4.4</span> Roles</h2>
 <ul>
@@ -322,7 +322,7 @@ Menganito<span class="op">:</span>Operario<span class="op">,</span>Sistemas<span
   <span class="bu">echo</span> -n <span class="st">&quot;</span><span class="va">${rol}</span><span class="st"> -&gt; &quot;</span>
   <span class="bu">echo</span> <span class="va">$(</span><span class="fu">grep</span> -E <span class="st">&quot;</span><span class="va">${rol}</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="va">${roles_file}</span><span class="st">&quot;</span> <span class="kw">|</span> <span class="fu">cut</span> -d : -f 1<span class="va">)</span>
 <span class="kw">done</span></code></pre></div>
-<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/06_roles_sin_awk.sh">ejemplos/06_roles_sin_awk.sh</a></p>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/06_roles_sin_awk.sh">examples/06_roles_sin_awk.sh</a></p>
 </section><section id="con-awk" class="slide level2">
 <h2><span class="header-section-number">4.6</span> Con awk</h2>
 <div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk"><span class="co"># this will run only once at first</span>
@@ -341,7 +341,7 @@ Menganito<span class="op">:</span>Operario<span class="op">,</span>Sistemas<span
   <span class="kw">}</span>
 <span class="kw">}</span>
 done</code></pre></div>
-<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/ejemplos/07_roles_con_awk.sh">ejemplos/07_roles_con_awk.sh</a></p>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/07_roles_con_awk.sh">examples/07_roles_con_awk.sh</a></p>
 </section><section id="tutorial-1" class="slide level2">
 <h2><span class="header-section-number">4.7</span> Tutorial</h2>
 <figure>
