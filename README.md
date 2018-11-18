@@ -14,36 +14,36 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 ## Plantilla de Bash Shell Script
 
-![](./slides/img/template.png)
-
 [template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/template.sh)
+
+![](./slides/img/template.png)
 
 ## Chuleta de Bash Shell Script
 
-![](./slides/img/chuleta-shell-script.png)
-
 [chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/chuleta-shell-script.pdf)
+
+![](./slides/img/chuleta-shell-script.png)
 
 ## ShellCheck, el lint de Bash Shell Script
 
-![](./slides/img/shellcheck-a-shell-script-static-analysis-tool.png)
-
 <https://github.com/koalaman/shellcheck>
+
+![](./slides/img/shellcheck-a-shell-script-static-analysis-tool.png)
 
 ## Guía de estilo de Google de Bash Shell Script
 
-![](./slides/img/google-shell-style-guide.png)
-
 <https://google.github.io/styleguide/shell.xml>
+
+![](./slides/img/google-shell-style-guide.png)
 
 ## Tutorial de Bash Shell Script
 
-![](./slides/img/bash-scripting-tutorial-for-beginners.png)
-
 <https://linuxconfig.org/bash-scripting-tutorial-for-beginners>
+
+![](./slides/img/bash-scripting-tutorial-for-beginners.png)
 
 ## Tutorial de AWK
 
-![](./slides/img/awk-a-tutorial-and-introduction-by-bruce-barnett.png)
-
 <http://www.grymoire.com/Unix/Awk.html>
+
+![](./slides/img/awk-a-tutorial-and-introduction-by-bruce-barnett.png)
