@@ -16,40 +16,40 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 <https://asanzdiego.github.io/commit-conf-charla-shell-script-y-awk/>
 
-![](./slides/img/slides.png)
+![](./slides/img/slides-sombra.png)
 
 ## Plantilla de Bash Shell Script
 
 [resources/template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
 
-![](./slides/img/template.png)
+![](./slides/img/template-sombra.png)
 
 ## Chuleta de Bash Shell Script
 
 [resources/chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
 
-![](./slides/img/chuleta-shell-script.png)
+![](./slides/img/chuleta-shell-script-sombra.png)
 
 ## ShellCheck, el lint de Bash Shell Script
 
 <https://github.com/koalaman/shellcheck>
 
-![](./slides/img/shellcheck-a-shell-script-static-analysis-tool.png)
+![](./slides/img/shellcheck-a-shell-script-static-analysis-tool-sombra.png)
 
 ## Guía de estilo de Google de Bash Shell Script
 
 <https://google.github.io/styleguide/shell.xml>
 
-![](./slides/img/google-shell-style-guide.png)
+![](./slides/img/google-shell-style-guide-sombra.png)
 
 ## Tutorial de Bash Shell Script
 
 <https://linuxconfig.org/bash-scripting-tutorial-for-beginners>
 
-![](./slides/img/bash-scripting-tutorial-for-beginners.png)
+![](./slides/img/bash-scripting-tutorial-for-beginners-sombra.png)
 
 ## Tutorial de AWK
 
 <http://www.grymoire.com/Unix/Awk.html>
 
-![](./slides/img/awk-a-tutorial-and-introduction-by-bruce-barnett.png)
+![](./slides/img/awk-a-tutorial-and-introduction-by-bruce-barnett-sombra.png)
