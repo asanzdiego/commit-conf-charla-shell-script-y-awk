@@ -178,13 +178,13 @@ $ ./02_parameters.sh param_1 param_2 ... param_N
 
 ![](../img/template.png)
 
-[template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/template.sh)
+[resources/template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
 
 ## Chuleta
 
 ![](../img/chuleta-shell-script.png)
 
-[chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/chuleta-shell-script.pdf)
+[resources/chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
 
 ## ShellCheck
 

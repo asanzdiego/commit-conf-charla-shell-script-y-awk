@@ -8,19 +8,25 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 [Charla en el Commit Conf](https://www.koliseo.com/events/commit-2018/r4p/5630471824211968/agenda#/5116072650866688/6265425427955712)
 
-![](commit-conf.png)
+![](./slides/img/commit-conf.png)
 
 ## Recursos
 
+## Slides de la charla
+
+<https://asanzdiego.github.io/commit-conf-charla-shell-script-y-awk/>
+
+![](./slides/img/slides.png)
+
 ## Plantilla de Bash Shell Script
 
-[template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/template.sh)
+[resources/template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
 
 ![](./slides/img/template.png)
 
 ## Chuleta de Bash Shell Script
 
-[chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/chuleta-shell-script.pdf)
+[resources/chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
 
 ![](./slides/img/chuleta-shell-script.png)
 
