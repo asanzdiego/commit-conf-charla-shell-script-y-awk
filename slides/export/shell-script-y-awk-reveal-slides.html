@@ -232,8 +232,22 @@ echo <span class="st">&quot;All ok&quot;</span> <span class="co"># ok and exits 
   local all_function_params<span class="op">=</span>($@) <span class="co"># all params assigned as a local</span>
 <span class="kw">}</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">my_function</span> function_param_1 function_param_2 ... function_param_N</code></pre></div>
+</section><section id="main" class="slide level2">
+<h2><span class="header-section-number">3.10</span> Main</h2>
+<ul>
+<li>Es una buena práctica <strong>estructurar el código en funciones</strong> y tener una función main que llamamos al final del script con todos los parámetros.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># Main function</span>
+<span class="fu">main()</span> <span class="kw">{</span>
+
+  <span class="ex">check</span> <span class="st">&quot;</span><span class="va">$@</span><span class="st">&quot;</span>
+  <span class="ex">params</span> <span class="st">&quot;</span><span class="va">$@</span><span class="st">&quot;</span>
+  <span class="ex">print</span>
+<span class="kw">}</span>
+
+<span class="ex">main</span> <span class="st">&quot;</span><span class="va">$@</span><span class="st">&quot;</span> <span class="co"># call the main function with all the parameters</span></code></pre></div>
 </section><section id="parámetros" class="slide level2">
-<h2><span class="header-section-number">3.10</span> Parámetros</h2>
+<h2><span class="header-section-number">3.11</span> Parámetros</h2>
 <ul>
 <li>Los parámetros los cogemos de la <strong>linea de comandos</strong> cuando ejecutamos.</li>
 </ul>
@@ -245,33 +259,33 @@ param_<span class="dv">2</span><span class="op">=</span>$<span class="kw">{</spa
 num_params<span class="op">=</span>$<span class="co">#              # the numbers of script params</span>
 all_params<span class="op">=</span>($@)            <span class="co"># all params assigned as an array</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">./02_parameters.sh</span> param_1 param_2 ... param_N</code></pre></div>
-<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/02_parametros.sh">examples/02_parametros.sh</a></p>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/02_parameters.sh">examples/02_parameters.sh</a></p>
 </section><section id="template" class="slide level2">
-<h2><span class="header-section-number">3.11</span> Template</h2>
+<h2><span class="header-section-number">3.12</span> Template</h2>
 <figure>
 <img src="../img/template.png" text-align="center" style="width:50.0%" />
 </figure>
 <p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/template.sh">template.sh</a></p>
 </section><section id="chuleta" class="slide level2">
-<h2><span class="header-section-number">3.12</span> Chuleta</h2>
+<h2><span class="header-section-number">3.13</span> Chuleta</h2>
 <figure>
 <img src="../img/chuleta-shell-script.png" text-align="center" style="width:50.0%" />
 </figure>
 <p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/chuleta-shell-script.pdf">chuleta-shell-script.pdf</a></p>
 </section><section id="shellcheck" class="slide level2">
-<h2><span class="header-section-number">3.13</span> ShellCheck</h2>
+<h2><span class="header-section-number">3.14</span> ShellCheck</h2>
 <figure>
 <img src="../img/shellcheck-a-shell-script-static-analysis-tool.png" text-align="center" style="width:50.0%" />
 </figure>
 <p><a href="https://github.com/koalaman/shellcheck" class="uri">https://github.com/koalaman/shellcheck</a></p>
 </section><section id="google-guide" class="slide level2">
-<h2><span class="header-section-number">3.14</span> Google Guide</h2>
+<h2><span class="header-section-number">3.15</span> Google Guide</h2>
 <figure>
 <img src="../img/google-shell-style-guide.png" text-align="center" style="width:50.0%" />
 </figure>
 <p><a href="https://google.github.io/styleguide/shell.xml" class="uri">https://google.github.io/styleguide/shell.xml</a></p>
 </section><section id="tutorial" class="slide level2">
-<h2><span class="header-section-number">3.15</span> Tutorial</h2>
+<h2><span class="header-section-number">3.16</span> Tutorial</h2>
 <figure>
 <img src="../img/bash-scripting-tutorial-for-beginners.png" text-align="center" style="width:50.0%" />
 </figure>
@@ -289,7 +303,7 @@ all_params<span class="op">=</span>($@)            <span class="co"># all params
 </section><section id="ejecución-1" class="slide level2">
 <h2><span class="header-section-number">4.2</span> Ejecución</h2>
 <div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk">awk &#39;awk_program&#39; data_file</code></pre></div>
-<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk">awk <span class="op">-</span>f &#39;awk_program&#39; data_file</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode awk"><code class="sourceCode awk">awk <span class="op">-</span>f &#39;awk_file&#39; data_file</code></pre></div>
 </section><section id="grades" class="slide level2">
 <h2><span class="header-section-number">4.3</span> Grades</h2>
 <ul>
@@ -339,9 +353,8 @@ Menganito<span class="op">:</span>Operario<span class="op">,</span>Sistemas<span
   <span class="kw">for</span> (rol <span class="kw">in</span> roles) <span class="kw">{</span>
     <span class="kw">print</span> rol<span class="st">&quot; -&gt; &quot;</span> roles[rol]
   <span class="kw">}</span>
-<span class="kw">}</span>
-done</code></pre></div>
-<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/07_roles_con_awk.sh">examples/07_roles_con_awk.sh</a></p>
+<span class="kw">}</span></code></pre></div>
+<p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/08_roles.awk">examples/08_roles.awk</a></p>
 </section><section id="tutorial-1" class="slide level2">
 <h2><span class="header-section-number">4.7</span> Tutorial</h2>
 <figure>

@@ -138,6 +138,22 @@ my_function() {
 my_function function_param_1 function_param_2 ... function_param_N
 ~~~
 
+## Main
+
+- Es una buena práctica **estructurar el código en funciones** y tener una función main que llamamos al final del script con todos los parámetros.
+
+~~~{.bash}
+# Main function
+main() {
+
+  check "$@"
+  params "$@"
+  print
+}
+
+main "$@" # call the main function with all the parameters
+~~~
+
 ## Parámetros
 
 - Los parámetros los cogemos de la **linea de comandos** cuando ejecutamos.
@@ -156,7 +172,7 @@ all_params=($@)            # all params assigned as an array
 $ ./02_parameters.sh param_1 param_2 ... param_N
 ~~~
 
-[examples/02_parametros.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/02_parametros.sh)
+[examples/02_parameters.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/02_parameters.sh)
 
 ## Template
 
@@ -211,7 +227,7 @@ awk 'awk_program' data_file
 ~~~
 
 ~~~{.awk}
-awk -f 'awk_program' data_file
+awk -f 'awk_file' data_file
 ~~~
 
 ## Grades
@@ -280,10 +296,9 @@ END {
     print rol" -> " roles[rol]
   }
 }
-done
 ~~~
 
-[examples/07_roles_con_awk.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/07_roles_con_awk.sh)
+[examples/08_roles.awk](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/examples/08_roles.awk)
 
 ## Tutorial
 
