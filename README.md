@@ -14,7 +14,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 ## Recursos
 
-## Slides de la charla
+### Slides de la charla
 
 [Slides de la charla](https://asanzdiego.github.io/commit-conf-charla-shell-script-y-awk/)
 
@@ -22,7 +22,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
   <img src="./slides/img/slides-sombra.png" alt="Slides de la charla"/>
 </a>
 
-## Plantilla de Bash Shell Script
+### Plantilla de Bash Shell Script
 
 [Plantilla de Bash Shell Script](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
 
@@ -30,7 +30,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
   <img src="./slides/img/template-sombra.png" alt="Plantilla de Bash Shell Script"/>
 </a>
 
-## Chuleta de Bash Shell Script
+### Chuleta de Bash Shell Script
 
 [Chuleta de Bash Shell Script](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
 
@@ -38,7 +38,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
   <img src="./slides/img/chuleta-shell-script-sombra.png" alt="Cheleta de Bash Shell Script"/>
 </a>
 
-## ShellCheck, el lint de Bash Shell Script
+### ShellCheck, el lint de Bash Shell Script
 
 [ShellCheck, el lint de Bash Shell Script](https://github.com/koalaman/shellcheck)
 
@@ -46,7 +46,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
   <img src="./slides/img/shellcheck-a-shell-script-static-analysis-tool-sombra.png" alt="ShellCheck, el lint de Bash Shell Script"/>
 </a>
 
-## Guía de estilo de Google de Bash Shell Script
+### Guía de estilo de Google de Bash Shell Script
 
 [Guía de estilo de Google de Bash Shell Script](https://google.github.io/styleguide/shell.xml)
 
@@ -54,7 +54,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
   <img src="./slides/img/google-shell-style-guide-sombra.png" alt="Guía de estilo de Google de Bash Shell Script"/>
 </a>
 
-## Tutorial de Bash Shell Script
+### Tutorial de Bash Shell Script
 
 [Tutorial de Bash Shell Script](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
 
@@ -62,7 +62,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
   <img src="./slides/img/bash-scripting-tutorial-for-beginners-sombra.png" alt="Tutorial de Bash Shell Script"/>
 </a>
 
-## Tutorial de AWK
+### Tutorial de AWK
 
 [Tutorial de AWK](http://www.grymoire.com/Unix/Awk.html)
 
