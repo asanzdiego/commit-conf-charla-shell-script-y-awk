@@ -8,7 +8,9 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 [Charla en el Commit Conf](https://www.koliseo.com/events/commit-2018/r4p/5630471824211968/agenda#/5116072650866688/6265425427955712)
 
-![](./slides/img/commit-conf.png)
+<a href="https://www.koliseo.com/events/commit-2018/r4p/5630471824211968/agenda#/5116072650866688/6265425427955712">
+  <img src="./slides/img/commit-conf-shell-scripting-y-awk.png" alt="Charla en el Commit Conf"/>
+</a>
 
 ## Recursos
 
