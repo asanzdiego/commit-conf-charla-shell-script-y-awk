@@ -16,7 +16,11 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 ## Slides de la charla
 
-<https://asanzdiego.github.io/commit-conf-charla-shell-script-y-awk/>
+[Slides de la charla](https://asanzdiego.github.io/commit-conf-charla-shell-script-y-awk/)
+
+<a href="https://asanzdiego.github.io/commit-conf-charla-shell-script-y-awk/">
+  <img src="./slides/img/slides-sombra.png" alt="Slides de la charla"/>
+</a>
 
 ![](./slides/img/slides-sombra.png)
 
@@ -24,34 +28,46 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 [resources/template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
 
-![](./slides/img/template-sombra.png)
+<a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh">
+  <img src="./slides/img/template-sombra.png" alt="Plantilla de Bash Shell Script"/>
+</a>
 
 ## Chuleta de Bash Shell Script
 
 [resources/chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
 
-![](./slides/img/chuleta-shell-script-sombra.png)
+<a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf">
+  <img src="./slides/img/chuleta-shell-script-sombra.png" alt="Cheleta de Bash Shell Script"/>
+</a>
 
 ## ShellCheck, el lint de Bash Shell Script
 
-<https://github.com/koalaman/shellcheck>
+[ShellCheck, el lint de Bash Shell Script](https://github.com/koalaman/shellcheck)
 
-![](./slides/img/shellcheck-a-shell-script-static-analysis-tool-sombra.png)
+<a href="https://github.com/koalaman/shellcheck">
+  <img src="./slides/img/shellcheck-a-shell-script-static-analysis-tool-sombra.png" alt="ShellCheck, el lint de Bash Shell Script"/>
+</a>
 
 ## Guía de estilo de Google de Bash Shell Script
 
-<https://google.github.io/styleguide/shell.xml>
+[Guía de estilo de Google de Bash Shell Script](https://google.github.io/styleguide/shell.xml)
 
-![](./slides/img/google-shell-style-guide-sombra.png)
+<a href="https://google.github.io/styleguide/shell.xmlk">
+  <img src="./slides/img/google-shell-style-guide-sombra.png" alt="Guía de estilo de Google de Bash Shell Script"/>
+</a>
 
 ## Tutorial de Bash Shell Script
 
-<https://linuxconfig.org/bash-scripting-tutorial-for-beginners>
+[Tutorial de Bash Shell Script](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
 
-![](./slides/img/bash-scripting-tutorial-for-beginners-sombra.png)
+<a href="https://linuxconfig.org/bash-scripting-tutorial-for-beginners">
+  <img src="./slides/img/bash-scripting-tutorial-for-beginners-sombra.png" alt="Tutorial de Bash Shell Script"/>
+</a>
 
 ## Tutorial de AWK
 
-<http://www.grymoire.com/Unix/Awk.html>
+[Tutorial de AWK](http://www.grymoire.com/Unix/Awk.html)
 
-![](./slides/img/awk-a-tutorial-and-introduction-by-bruce-barnett-sombra.png)
+<a href="http://www.grymoire.com/Unix/Awk.html">
+  <img src="./slides/img/awk-a-tutorial-and-introduction-by-bruce-barnett-sombra.png" alt="Tutorial de AWK"/>
+</a>
