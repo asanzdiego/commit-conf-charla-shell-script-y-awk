@@ -176,33 +176,43 @@ $ ./02_parameters.sh param_1 param_2 ... param_N
 
 ## Template
 
-![](../img/template.png)
+<a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh">
+  <img style="width:70%" src="../img/template.png" alt="Plantilla de Bash Shell Script"/>
+</a>
 
-[resources/template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
+[Plantilla de Bash Shell Script](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
 
 ## Chuleta
 
-![](../img/chuleta-shell-script.png)
+<a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf">
+  <img style="width:100%" src="../img/chuleta-shell-script.png" alt="Cheleta de Bash Shell Script"/>
+</a>
 
-[resources/chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
+[Chuleta de Bash Shell Script](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
 
 ## ShellCheck
 
-![](../img/shellcheck-a-shell-script-static-analysis-tool.png)
+<a href="https://github.com/koalaman/shellcheck">
+  <img style="width:70%" src="../img/shellcheck-a-shell-script-static-analysis-tool-bis.png" alt="ShellCheck, el lint de Bash Shell Script"/>
+</a>
 
-<https://github.com/koalaman/shellcheck>
+[ShellCheck, el lint de Bash Shell Script](https://github.com/koalaman/shellcheck)
 
 ## Google Guide
 
-![](../img/google-shell-style-guide.png)
+<a href="https://google.github.io/styleguide/shell.xml">
+  <img style="width:70%" src="../img/google-shell-style-guide.png" alt="Guía de estilo de Google de Bash Shell Script"/>
+</a>
 
-<https://google.github.io/styleguide/shell.xml>
+[Guía de estilo de Google de Bash Shell Script](https://google.github.io/styleguide/shell.xml)
 
 ## Tutorial
 
-![](../img/bash-scripting-tutorial-for-beginners.png)
+<a href="https://linuxconfig.org/bash-scripting-tutorial-for-beginners">
+  <img style="width:70%" src="../img/bash-scripting-tutorial-for-beginners-bis.png" alt="Tutorial de Bash Shell Script"/>
+</a>
 
-<https://linuxconfig.org/bash-scripting-tutorial-for-beginners>
+[Tutorial de Bash Shell Script](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
 
 
 
@@ -302,10 +312,11 @@ END {
 
 ## Tutorial
 
-![](../img/awk-a-tutorial-and-introduction-by-bruce-barnett.png)
+<a href="http://www.grymoire.com/Unix/Awk.html">
+  <img style="width:70%" src="../img/awk-a-tutorial-and-introduction-by-bruce-barnett.png" alt="Tutorial de AWK"/>
+</a>
 
-<http://www.grymoire.com/Unix/Awk.html>
-
+[Tutorial de AWK](http://www.grymoire.com/Unix/Awk.html)
 
 
 
@@ -317,8 +328,7 @@ END {
 
 ## Licencia
 
-- Creative Commons Reconocimiento-CompartirIgual 3.0  
-    - <http://creativecommons.org/licenses/by-sa/3.0/es/>
+[Creative Commons Reconocimiento-CompartirIgual 3.0](http://creativecommons.org/licenses/by-sa/3.0/es/)
 
 ## Fuentes
 
@@ -326,8 +336,7 @@ END {
 
 ## Slides
 
-- Las slides están hechas con **MarkdownSlides**
-    - <https://github.com/markdownslides/markdownslides>
+Las slides están hechas con **[MarkdownSlides](https://github.com/markdownslides/markdownslides>)**.
 
 
 

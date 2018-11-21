@@ -22,11 +22,9 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
   <img src="./slides/img/slides-sombra.png" alt="Slides de la charla"/>
 </a>
 
-![](./slides/img/slides-sombra.png)
-
 ## Plantilla de Bash Shell Script
 
-[resources/template.sh](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
+[Plantilla de Bash Shell Script](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
 
 <a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh">
   <img src="./slides/img/template-sombra.png" alt="Plantilla de Bash Shell Script"/>
@@ -34,7 +32,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 ## Chuleta de Bash Shell Script
 
-[resources/chuleta-shell-script.pdf](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
+[Chuleta de Bash Shell Script](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf)
 
 <a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/chuleta-shell-script.pdf">
   <img src="./slides/img/chuleta-shell-script-sombra.png" alt="Cheleta de Bash Shell Script"/>
@@ -52,7 +50,7 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 [Guía de estilo de Google de Bash Shell Script](https://google.github.io/styleguide/shell.xml)
 
-<a href="https://google.github.io/styleguide/shell.xmlk">
+<a href="https://google.github.io/styleguide/shell.xml">
   <img src="./slides/img/google-shell-style-guide-sombra.png" alt="Guía de estilo de Google de Bash Shell Script"/>
 </a>
 
