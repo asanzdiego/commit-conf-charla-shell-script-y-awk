@@ -83,7 +83,7 @@ params() {
       -b=*|--beta=*)
         beta=${param#*=}
         ;;
-      -h|--nelp)
+      -h|--help)
         usage
         exit 0
         ;;

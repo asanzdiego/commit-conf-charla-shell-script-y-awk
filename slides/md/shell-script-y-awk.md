@@ -9,6 +9,7 @@
 
 
 
+
 ## Adolfo Sanz De Diego
 
 Asesor. Desarrollador. Profesor. Formador.
@@ -24,6 +25,8 @@ Asesor. Desarrollador. Profesor. Formador.
 
 > - He intentado montar una charla útil **para principiantes**, pero **con tips para gente con más conocimientos**.
 > - Espero haberlo conseguido :-) 
+
+
 
 
 # Shell Script
@@ -105,7 +108,7 @@ set -o nounset  # the script ends if it uses an undeclared variable
 
 num_params=$#
 
-if [ $num_params -lt 1 ]]; then
+if [[ $num_params -lt 1 ]]; then
     echo "At least one parameter must be introduced."
     exit 1 # error and exits with a return code > 0
 fi
@@ -336,7 +339,7 @@ END {
 
 ## Slides
 
-Las slides están hechas con **[MarkdownSlides](https://github.com/markdownslides/markdownslides>)**.
+Las slides están hechas con **[MarkdownSlides](https://github.com/markdownslides/markdownslides)**.
 
 
 

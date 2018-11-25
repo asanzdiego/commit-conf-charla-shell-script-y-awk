@@ -208,12 +208,12 @@ set <span class="op">-</span>o nounset  <span class="co"># the script ends if it
 
 <span class="va">num_params=$#</span>
 
-<span class="kw">if</span><span class="bu"> [</span> <span class="va">$num_params</span> <span class="ot">-lt</span> 1 ]]; then
-    echo <span class="st">&quot;At least one parameter must be introduced.&quot;</span>
-    exit 1 <span class="co"># error and exits with a return code &gt; 0</span>
-fi
+<span class="kw">if [[</span> <span class="va">$num_params</span> <span class="ot">-lt</span> 1<span class="kw"> ]]</span>; <span class="kw">then</span>
+    <span class="bu">echo</span> <span class="st">&quot;At least one parameter must be introduced.&quot;</span>
+    <span class="bu">exit</span> 1 <span class="co"># error and exits with a return code &gt; 0</span>
+<span class="kw">fi</span>
 
-echo <span class="st">&quot;All ok&quot;</span> <span class="co"># ok and exits with a return code = 0</span></code></pre></div>
+<span class="bu">echo</span> <span class="st">&quot;All ok&quot;</span> <span class="co"># ok and exits with a return code = 0</span></code></pre></div>
 </section><section id="parciales" class="slide level2">
 <h2><span class="header-section-number">3.8</span> Parciales</h2>
 <ul>
@@ -358,7 +358,7 @@ Menganito<span class="op">:</span>Operario<span class="op">,</span>Sistemas<span
 <p><a href="https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk">github.com/asanzdiego/commit-conf-charla-shell-script-y-awk</a></p>
 </section><section id="slides" class="slide level2">
 <h2><span class="header-section-number">5.3</span> Slides</h2>
-<p>Las slides están hechas con <strong><a href="https://github.com/markdownslides/markdownslides%3E">MarkdownSlides</a></strong>.</p>
+<p>Las slides están hechas con <strong><a href="https://github.com/markdownslides/markdownslides">MarkdownSlides</a></strong>.</p>
 </section></section>
 <section><section id="preguntas" class="titleslide slide level1"><h1><span class="header-section-number">6</span> Preguntas</h1></section></section>
 <section><section id="gracias" class="titleslide slide level1"><h1><span class="header-section-number">7</span> Gracias</h1></section></section>
