@@ -22,6 +22,14 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
   <img src="./slides/img/slides-sombra.png" alt="Slides de la charla"/>
 </a>
 
+### Vídeo de la charla
+
+[Vídeo de la charla](https://www.youtube.com/watch?v=bH8Yb4R33vA)
+
+<a href="https://www.youtube.com/watch?v=bH8Yb4R33vA">
+  <img src="./slides/img/videos-sombra.png" alt="Vídeo de la charla"/>
+</a>
+
 ### Plantilla de Bash Shell Script
 
 [Plantilla de Bash Shell Script](https://github.com/asanzdiego/commit-conf-charla-shell-script-y-awk/blob/master/resources/template.sh)
