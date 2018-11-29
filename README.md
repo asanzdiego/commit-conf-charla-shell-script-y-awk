@@ -14,20 +14,20 @@ Originalmente es un taller que presenté en el [t3chfest](https://t3chfest.uc3m.
 
 ## Recursos
 
+### Vídeo de la charla
+
+[Vídeo de la charla](https://www.youtube.com/watch?v=bH8Yb4R33vA)
+
+<a href="https://www.youtube.com/watch?v=bH8Yb4R33vA">
+  <img src="./slides/img/video-sombra.png" alt="Vídeo de la charla"/>
+</a>
+
 ### Slides de la charla
 
 [Slides de la charla](https://asanzdiego.github.io/commit-conf-charla-shell-script-y-awk/)
 
 <a href="https://asanzdiego.github.io/commit-conf-charla-shell-script-y-awk/">
   <img src="./slides/img/slides-sombra.png" alt="Slides de la charla"/>
-</a>
-
-### Vídeo de la charla
-
-[Vídeo de la charla](https://www.youtube.com/watch?v=bH8Yb4R33vA)
-
-<a href="https://www.youtube.com/watch?v=bH8Yb4R33vA">
-  <img src="./slides/img/videos-sombra.png" alt="Vídeo de la charla"/>
 </a>
 
 ### Plantilla de Bash Shell Script
